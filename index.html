@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="高一8班 · 同学与老师的语录">
+<title>刘语 · 高一8班语录</title>
+<link rel="stylesheet" href="./style.css?v=20261017a">
+</head>
+<body>
+
+<div class="paper">
+
+  <header class="head">
+    <p class="head-kicker">高一8班 · 同学与老师的语录</p>
+    <h1 class="head-title">
+      刘语
+      <span class="seal" aria-hidden="true">录</span>
+    </h1>
+    <p class="head-lead">原话照录，不改意思。只记善意和好玩。</p>
+  </header>
+
+  <!-- 篇目跳转 -->
+  <nav class="toc" id="toc" aria-label="篇目录"></nav>
+
+  <!-- 所有「框」画在这里 -->
+  <main id="board"></main>
+
+  <p class="board-empty" id="boardEmpty" hidden></p>
+
+  <section class="fanli">
+    <h2 class="fanli-title">凡例</h2>
+    <ol class="fanli-list">
+      <li>说话人不写<b>真实姓名</b>，同学写昵称，老师写化名或外号。</li>
+      <li>记的是<b>原话</b>，别改意思，也别把两句拼成一句。</li>
+      <li>只记好笑、有趣、有道理的。<b>不记批评同学的话</b>，不记让人难堪的话。</li>
+      <li>觉得哪条不合适，找编辑删掉就行，不用吵。</li>
+    </ol>
+  </section>
+
+  <footer class="foot">
+    <span class="foot-note" id="footNote">只读浏览</span>
+    <button class="btn-mini" id="editBtn" type="button">编辑</button>
+    <button class="btn-mini is-ghost" id="logoutBtn" type="button" hidden>退出编辑</button>
+  </footer>
+
+</div>
+
+<!-- ============ 输入编辑钥匙 ============ -->
+<div class="modal" id="keyLayer" hidden>
+  <div class="modal-mask" id="keyMask"></div>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="keyTitle">
+    <h2 class="modal-title" id="keyTitle">输入编辑钥匙</h2>
+    <p class="modal-hint">
+      钥匙由管理员发给你，长这样：<code>ly-xxxx-xxxx-xxxx-xxxx</code>。
+      拿到手之后在<b>这台设备</b>上只需输一次。
+    </p>
+    <input class="in" id="keyInput" type="text" autocomplete="off" spellcheck="false"
+           placeholder="ly-xxxx-xxxx-xxxx-xxxx">
+    <p class="modal-err" id="keyErr" hidden></p>
+    <div class="modal-foot">
+      <button class="btn-mini is-ghost" id="keyCancel" type="button">取消</button>
+      <button class="btn-mini" id="keyOk" type="button">进入</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="./config.js?v=20261017a"></script>
+<script src="./app.js?v=20261017a"></script>
+</body>
+</html>
